@@ -17,8 +17,73 @@ $font-family: 'Manrope', sans-serif;
   font-family: $font-family;
 }
 
+body {
+  background-color: $dark-blue;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 95dvh;
+}
+
+.main__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 550px;
+  padding: 3%;
+  border-radius: 1rem;
+  background-color: $dark-grayish-blue;
+  text-align: center;
+  .main__id {
+    color: $neon-green;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+  }
+  .main__advice {
+    color: $light-cyan;
+    font-size: 1.75rem;
+    font-weight: 800;
+  }
+  .main__button-container {
+    position: absolute;
+    bottom: -30px; // half the height of the button
+    left: 50%;
+    transform: translateX(-50%);
+    .main__button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      height: 60px;
+      border-radius: 50px;
+      border: none;
+      background-color: $neon-green;
+      color: $dark-blue;
+      font-size: 1rem;
+      font-weight: 800;
+      transition: box-shadow 0.3s ease;
+      &:hover {
+        background-color: hsl(150, 100%, 50%);
+        box-shadow: 0 0 5px $neon-green, 0 0 10px $neon-green, 0 0 20px $neon-green, 0 0 30px $neon-green;
+      }
+      img {
+        width: 23px;
+        height: 23px;
+      }
+    }
+  }
+}
+
 .attribution { 
   font-size: 11px; text-align: center;
+  color: $light-cyan;
   a { 
     color: hsl(228, 45%, 44%); 
   }
