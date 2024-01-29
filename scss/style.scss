@@ -19,6 +19,7 @@ $font-family: 'Manrope', sans-serif;
 
 body {
   background-color: $dark-blue;
+  padding: 0 2%;
 }
 
 .main {
@@ -26,7 +27,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 95dvh;
+  height: 98dvh;
 }
 
 .main__container {
@@ -36,10 +37,12 @@ body {
   align-items: center;
   gap: 2rem;
   width: 550px;
-  padding: 3%;
+  height: auto;
+  padding: 2.5rem;
   border-radius: 1rem;
   background-color: $dark-grayish-blue;
   text-align: center;
+  padding-bottom: 3rem;
   .main__id {
     color: $neon-green;
     font-size: 1rem;
@@ -53,7 +56,7 @@ body {
   }
   .main__button-container {
     position: absolute;
-    bottom: -30px; // half the height of the button
+    bottom: -35px;
     left: 50%;
     transform: translateX(-50%);
     .main__button {
@@ -78,6 +81,51 @@ body {
         height: 23px;
       }
     }
+  }
+}
+
+.main__divider img:nth-child(1) {
+  display: initial;
+}
+.main__divider img:nth-child(2) {
+  display: none;
+}
+
+// Media query for tablets
+@media (max-width: 768px) {
+  .main__container {
+    width: 80%; // adjust as needed
+  }
+  .main__button-container .main__button {
+    width: 50px; // adjust as needed
+    height: 50px; // adjust as needed
+  }
+}
+
+// Media query for medium size devices
+@media (max-width: 586px) {
+  .main__divider img:nth-child(1) {
+    display: none;
+  }
+  .main__divider img:nth-child(2) {
+    display: initial;
+  }
+}
+
+// Media query for mobile devices
+@media (max-width: 480px) {
+  .main__container {
+    width: 90%; // adjust as needed
+  }
+  .main__button-container .main__button {
+    width: 40px; // adjust as needed
+    height: 40px; // adjust as needed
+  }
+  .main__divider img:nth-child(1) {
+    display: none;
+  }
+  .main__divider img:nth-child(2) {
+    display: initial;
   }
 }
 
