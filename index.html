@@ -12,17 +12,22 @@
   <main class="main">
     <div class="main__container">
       <div class="main__id">
-        <p class="main__text">
-          Advice #<!-- Advice ID goes here -->
+        <p>
+          Advice #<span id="advice__id"></span>
         </p>
       </div>
       <div class="main__advice">
-        <p class="main__text">
-          <!-- Advice text goes here -->
+        <p>
+          <q id="advice__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </q>
         </p>
       </div>
+      <div class="main__divider">
+        <img src="/images/pattern-divider-desktop.svg" alt="Desktop divider">
+      </div>
       <div class="main__button-container">
-        <button class="main__button" id="button">
+        <button class="main__button" id="advice__btn">
           <img src="/images/icon-dice.svg" alt="Icon" class="main__icon">
         </button>
       </div>
@@ -34,6 +39,6 @@
     Coded by <a href="#">Your Name Here</a>.
   </footer>
 
-  <script src="/js/script.js"></script>
+  <script defer src="/js/script.js"></script>
 </body>
 </html>
