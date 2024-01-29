@@ -19,4 +19,5 @@ const getAdvice = async () => {
   };
 };
 
+window.addEventListener("load", getAdvice);
 adviceBtn.addEventListener("click", getAdvice);
