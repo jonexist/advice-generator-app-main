@@ -2,6 +2,9 @@ let advideID = document.getElementById("advice__id");
 let adviceText = document.getElementById("advice__text");
 let adviceBtn = document.getElementById("advice__btn");
 
+advideID.textContent = "Getting ID...";
+adviceText.textContent = "Getting advices...";
+
 // Define an asynchronous function to fetch advice from the API
 const getAdvice = async () => {
   try {
